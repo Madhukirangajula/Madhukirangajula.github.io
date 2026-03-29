@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Madhu Kiran Gajula — Graduate Research Assistant at Binghamton University. RF & Microwave Engineering, Antenna Design, PCB Layout, LNA/PA, Power Electronics." />
+  <meta name="author" content="Madhu Kiran Gajula" />
+  <title>Madhu Kiran Gajula | RF & Microwave Engineering</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ============================================================
+       NAVIGATION BAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        MKG<span class="logo-accent">.</span>dev
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"       class="nav-link active">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#activity"   class="nav-link">Activity</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="#home"       class="mob-link">Home</a></li>
+      <li><a href="#about"      class="mob-link">About</a></li>
+      <li><a href="#skills"     class="mob-link">Skills</a></li>
+      <li><a href="#projects"   class="mob-link">Projects</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#education"  class="mob-link">Education</a></li>
+      <li><a href="#activity"   class="mob-link">Activity</a></li>
+      <li><a href="#contact"    class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="home" class="hero">
+    <!-- Animated RF signal canvas background -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Grid overlay -->
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <!-- Profile image -->
+      <div class="hero-image-wrap reveal">
+        <div class="hero-image-ring">
+          <img
+            src="https://placehold.co/280x280/0D1526/00D4FF?text=MKG"
+            alt="Madhu Kiran Gajula"
+            class="hero-avatar"
+          />
+        </div>
+        <div class="hero-image-dot dot-1"></div>
+        <div class="hero-image-dot dot-2"></div>
+        <div class="hero-image-dot dot-3"></div>
+      </div>
+
+      <!-- Text block -->
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Madhu Kiran Gajula</h1>
+        <p class="hero-title">
+          <span class="title-badge">
+            <i class="fa-solid fa-signal"></i>
+            <span id="typewriterText">Graduate Research Assistant</span><span class="cursor-blink">|</span>
+          </span>
+        </p>
+        <p class="hero-bio">
+          M.S. Electrical Engineering student at Binghamton University with hands-on experience in
+          RF & antenna design, PCB layout, LNA/PA circuits, and power electronics — combining
+          simulation expertise in ANSYS HFSS and LTspice with real hardware fabrication and testing.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-diagram-project"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+          <a href="RESUME-B_MADHU.pdf" download class="btn btn-ghost">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Roles</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">3.7</span>
+            <span class="stat-label">GPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 // About Me</span>
+        <h2 class="section-title">Background & Vision</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: text -->
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Madhu Kiran Gajula</strong>, a Master's student in Electrical and Computer
+            Engineering at <strong>Binghamton University (SUNY)</strong> with a GPA of 3.7/4.0,
+            currently working as a Graduate Research Assistant in the SPIR Program. My academic
+            and professional journey spans RF/microwave systems, antenna engineering, power
+            electronics, and PCB design.
+          </p>
+          <p>
+            In the SPIR research lab, I design and fabricate high-gain compact microstrip patch
+            antenna arrays operating across S-, Ku-, and Ka-bands, integrating Artificial Magnetic
+            Conductor (AMC) ground planes for enhanced performance. I also work on LNA/PA circuit
+            design using <strong>ANSYS HFSS, LTspice,</strong> and <strong>MATLAB</strong>, and
+            perform full simulation-to-hardware correlation through S-parameter analysis.
+          </p>
+          <p>
+            Prior to my graduate studies, I worked as a Power Electronics Engineer at
+            <strong>Sagar Semiconductors</strong> in Hyderabad, where I led the full design
+            lifecycle of a 12 V / 48 Ah Battery Management System and an isolated 48 V-to-12 V
+            DC-DC converter — from schematic capture through board bring-up and customer
+            acceptance testing. My career goal is to contribute to next-generation RF front-end
+            systems, antenna arrays, and wireless communication platforms.
+          </p>
+
+          <!-- Personal details chips -->
+          <div class="about-chips">
+            <span class="chip"><i class="fa-solid fa-graduation-cap"></i> Binghamton University</span>
+            <span class="chip"><i class="fa-solid fa-microchip"></i> M.S. Electrical Engineering</span>
+            <span class="chip"><i class="fa-solid fa-location-dot"></i> Binghamton, NY</span>
+            <span class="chip"><i class="fa-solid fa-satellite-dish"></i> RF & Antenna Research</span>
+            <span class="chip"><i class="fa-solid fa-bolt"></i> Power Electronics</span>
+          </div>
+        </div>
+
+        <!-- Right: info cards -->
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <i class="fa-solid fa-bullseye info-icon"></i>
+            <h4>Specialization</h4>
+            <p>RF/microwave circuit design, antenna arrays, LNA/PA design, PCB layout, and power electronics.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-flask info-icon"></i>
+            <h4>Research Focus</h4>
+            <p>High-gain compact patch antenna arrays with AMC ground planes targeting S-, Ku-, and Ka-band.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-code info-icon"></i>
+            <h4>Tools & Simulation</h4>
+            <p>ANSYS HFSS, LTspice, MATLAB/Simulink, Altium Designer, KiCad, ADS, AutoCAD.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-rocket info-icon"></i>
+            <h4>Career Goal</h4>
+            <p>RF/antenna engineer contributing to next-generation wireless systems, radar, and satellite communications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 // Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+
+      <!-- Category tabs -->
+      <div class="skills-tabs reveal">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="simulation">EDA / Simulation</button>
+        <button class="tab-btn" data-tab="rf">RF & Antenna</button>
+        <button class="tab-btn" data-tab="hardware">Hardware & Power</button>
+      </div>
+
+      <!-- Skills grid -->
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Each skill item is injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS DASHBOARD
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 // Projects</span>
+        <h2 class="section-title">Project Dashboard</h2>
+      </div>
+
+      <!-- Dashboard stats row -->
+      <div class="dash-stats reveal">
+        <div class="dash-stat">
+          <i class="fa-solid fa-diagram-project"></i>
+          <div>
+            <span class="dash-num" id="totalProjects">10</span>
+            <span class="dash-label">Total Projects</span>
+          </div>
+        </div>
+        <div class="dash-stat">
+          <i class="fa-solid fa-satellite-dish"></i>
+          <div>
+            <span class="dash-num">3</span>
+            <span class="dash-label">Antenna / RF</span>
+          </div>
+        </div>
+        <div class="dash-stat">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <span class="dash-num">3</span>
+            <span class="dash-label">Circuits / Power</span>
+          </div>
+        </div>
+        <div class="dash-stat">
+          <i class="fa-solid fa-tools"></i>
+          <div>
+            <span class="dash-num">7+</span>
+            <span class="dash-label">Tools Used</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter + Search bar -->
+      <div class="proj-controls reveal">
+        <div class="proj-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="antenna">Antenna</button>
+          <button class="filter-btn" data-filter="rf">RF</button>
+          <button class="filter-btn" data-filter="circuits">Circuits / Power</button>
+          <button class="filter-btn" data-filter="research">Research</button>
+        </div>
+        <div class="proj-search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="projSearch"
+            class="proj-search"
+            placeholder="Search projects…"
+          />
+        </div>
+      </div>
+
+      <!-- No results message -->
+      <p class="no-results" id="noResults" style="display:none;">
+        No projects match your search.
+      </p>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE DASHBOARD
+  ============================================================ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 // Experience</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <!-- Experience stats -->
+      <div class="dash-stats reveal">
+        <div class="dash-stat">
+          <i class="fa-solid fa-briefcase"></i>
+          <div>
+            <span class="dash-num">3</span>
+            <span class="dash-label">Roles</span>
+          </div>
+        </div>
+        <div class="dash-stat">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <span class="dash-num">2+ Yrs</span>
+            <span class="dash-label">Industry Exp.</span>
+          </div>
+        </div>
+        <div class="dash-stat">
+          <i class="fa-solid fa-network-wired"></i>
+          <div>
+            <span class="dash-num">RF + PCB + BMS</span>
+            <span class="dash-label">Focus Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline" id="expTimeline">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 // Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Primary degree card -->
+        <div class="edu-card reveal">
+          <div class="edu-card-header">
+            <div class="edu-logo">
+              <i class="fa-solid fa-university"></i>
+            </div>
+            <div class="edu-meta">
+              <h3>Binghamton University</h3>
+              <span class="edu-badge">State University of New York — Thomas J. Watson College</span>
+            </div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-row">
+              <i class="fa-solid fa-scroll"></i>
+              <div>
+                <strong>Master of Science — Electrical &amp; Computer Engineering</strong>
+                <p>Aug 2025 – May 2027 &nbsp;|&nbsp; GPA: 3.7 / 4.0</p>
+              </div>
+            </div>
+            <div class="edu-row">
+              <i class="fa-solid fa-crosshairs"></i>
+              <div>
+                <strong>Focus Areas</strong>
+                <p>RF &amp; Microwave Engineering, Antenna Design, PCB Design, Power Electronics, CMOS VLSI</p>
+              </div>
+            </div>
+            <div class="edu-row">
+              <i class="fa-solid fa-flask"></i>
+              <div>
+                <strong>Relevant Coursework</strong>
+                <p>Analog Circuit Design, RF &amp; Microwave Engineering, Power Electronics, CMOS VLSI Circuits &amp; Architecture</p>
+              </div>
+            </div>
+            <div class="edu-tags">
+              <span class="edu-tag">ANSYS HFSS</span>
+              <span class="edu-tag">LTspice</span>
+              <span class="edu-tag">MATLAB</span>
+              <span class="edu-tag">Altium Designer</span>
+              <span class="edu-tag">ADS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Undergraduate + Diploma -->
+        <div class="edu-side">
+          <div class="edu-extra-card reveal">
+            <i class="fa-solid fa-graduation-cap edu-extra-icon"></i>
+            <h4>BV Raju Institute of Technology (BVRIT)</h4>
+            <p><strong>B.S. — Electrical &amp; Electronics Engineering</strong><br/>
+            Nov 2022 – May 2025<br/>
+            Minor: Data Science Engineering</p>
+            <span class="edu-tag" style="margin-top:0.6rem;display:inline-block;">Hyderabad, India</span>
+          </div>
+          <div class="edu-extra-card reveal">
+            <i class="fa-solid fa-school edu-extra-icon"></i>
+            <h4>Government Polytechnic, Hyderabad</h4>
+            <p><strong>Diploma — Electrical &amp; Electronics Engineering</strong><br/>
+            June 2018 – June 2021</p>
+            <span class="edu-tag" style="margin-top:0.6rem;display:inline-block;">Hyderabad, India</span>
+          </div>
+          <div class="edu-extra-card reveal">
+            <i class="fa-solid fa-award edu-extra-icon"></i>
+            <h4>Certifications</h4>
+            <p>Introduction to Motor Control &nbsp;|&nbsp; Power Electronics Simulation &nbsp;|&nbsp; Design of Half-Wave Dipole Antenna</p>
+            <span class="placeholder-tag">LinkedIn Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RECENT ACTIVITY / LINKEDIN POSTS
+  ============================================================ -->
+  <section id="activity" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 // Recent Work</span>
+        <h2 class="section-title">Latest Engineering Posts</h2>
+        <p class="section-sub">Sharing ongoing simulation work, design explorations, and engineering insights on LinkedIn.</p>
+      </div>
+
+      <div class="activity-grid">
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-rf">RF Design</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">2.4 GHz LNA Simulation — ATF-34143</h4>
+          <p class="activity-body">
+            Simulated a 2.4 GHz LNA using ATF-34143 in Qucs. Achieved S21 ≈ 16.8 dB, S11 ≈ −17 dB, S22 ≈ −21 dB with unconditional stability (K &gt; 1). Currently refining input matching to further reduce noise figure.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 77 reactions</span>
+            <span><i class="fa-solid fa-comment"></i> 3 comments</span>
+            <span><i class="fa-solid fa-eye"></i> 3,391 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-rf">Microwave</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">2.4 GHz Microstrip Bias Tee Simulation</h4>
+          <p class="activity-body">
+            Simulated a 2.4 GHz microstrip bias tee achieving S11 ≈ −53 dB and S22 ≈ −53 dB. Used for DC and RF signal separation in LNA design workflows.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 55 reactions</span>
+            <span><i class="fa-solid fa-comment"></i> 6 comments</span>
+            <span><i class="fa-solid fa-eye"></i> 2,248 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-antenna">Antenna</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">50-Ω Microstrip Line + SMA Connector Modeling</h4>
+          <p class="activity-body">
+            Simulated a 50-Ω microstrip on FR-4 (h = 1.6 mm) with SMA edge-launch connectors in ANSYS HFSS. Demonstrated how connector transitions and reference plane placement impact S-parameters beyond ideal theory.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 38 reactions</span>
+            <span><i class="fa-solid fa-comment"></i> 1 comment</span>
+            <span><i class="fa-solid fa-eye"></i> 1,589 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-vlsi">VLSI</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">16-bit CMOS Accumulator — Electric VLSI</h4>
+          <p class="activity-body">
+            Completed the final CMOS VLSI Design course project — a 16-bit accumulator built with 4-bit adders and D flip-flops, then implemented as a full custom transistor-level layout with DRC/LVS verification.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 35 reactions</span>
+            <span><i class="fa-solid fa-comment"></i> 2 comments</span>
+            <span><i class="fa-solid fa-eye"></i> 1,312 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-analog">Analog</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">4th-Order Sallen-Key Band-Pass Filter</h4>
+          <p class="activity-body">
+            Designed a 4th-order Sallen-Key BPF in LTspice for 30 kHz with a passband of 10–50 kHz. Achieved −32.5 dB attenuation at 15 Hz and −28.6 dB near 500 kHz. Corrected RC mismatch and validated stage gain K = 1.586.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 34 reactions</span>
+            <span><i class="fa-solid fa-eye"></i> 1,202 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-card-top">
+            <span class="activity-tag tag-analog">Analog</span>
+            <span class="activity-date"><i class="fa-regular fa-clock"></i> Recent</span>
+          </div>
+          <h4 class="activity-title">Small-Signal Amplifier — 66 dB Gain</h4>
+          <p class="activity-body">
+            Designed and simulated a small-signal amplifier in LTspice focusing on stable biasing and frequency response. Ran AC analysis across frequencies and achieved approximately 66 dB gain.
+          </p>
+          <div class="activity-metrics">
+            <span><i class="fa-solid fa-thumbs-up"></i> 20 reactions</span>
+            <span><i class="fa-solid fa-eye"></i> 809 impressions</span>
+          </div>
+          <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="activity-link">
+            View on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+      </div><!-- /.activity-grid -->
+
+      <div class="activity-cta reveal">
+        <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-linkedin-in"></i> Follow on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">07 // Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have a project in mind, a question, or just want to connect? Drop a message below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: contact info -->
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p class="contact-intro">
+            I'm always open to discussing RF engineering, antenna research, PCB design
+            projects, graduate research opportunities, or full-time roles in RF/microwave
+            and power electronics engineering.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:gajulamadhukiran@gmail.com" class="contact-link">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">gajulamadhukiran@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/madhukirangajula" target="_blank" class="contact-link">
+              <span class="contact-icon contact-icon-li"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">linkedin.com/in/madhukirangajula</span>
+              </div>
+            </a>
+            <a href="tel:+16073041321" class="contact-link">
+              <span class="contact-icon contact-icon-phone"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-val">(607) 304-1321</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Availability badge -->
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            Open to full-time RF/antenna engineering roles &amp; research collaborations
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Name</label>
+                <input type="text" id="formName" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formSubject">Subject</label>
+              <input type="text" id="formSubject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" rows="5" placeholder="Write your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">
+        <span class="logo-bracket">&lt;</span>MKG<span class="logo-accent">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </p>
+      <p class="footer-copy">
+        &copy; <span id="footerYear"></span> Madhu Kiran Gajula — Graduate Research Assistant | RF & Microwave Engineering
+      </p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/madhukirangajula" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:gajulamadhukiran@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+16073041321"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Project detail modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
